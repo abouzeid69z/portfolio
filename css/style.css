@@ -439,41 +439,233 @@ footer {
   }
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .container {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+  }
+
   nav {
     float: none;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
+
   .nav-links {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
+
+  .nav-links li {
+    margin-left: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    display: block;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 15px;
   }
-  .hero-image {
-    max-width: 300px;
-    margin: 1.5rem auto 0;
-  }
+
   .hero-content {
     max-width: 100%;
+    min-width: 100%;
   }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin: 1rem auto 0;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+    border-width: 3px;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
   .about p {
+    font-size: 1rem;
     max-width: 100%;
   }
+
+  .projects-grid,
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .btn-link {
+    font-size: 1rem;
+  }
+
   .certificates-section {
     padding: 3rem 0;
   }
+
   .certificates-section .section-title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
+
+  .certificates-wrapper {
+    max-width: 100%;
+  }
+
+  .placeholder-icon {
+    font-size: 3rem;
+  }
+
   .contact {
     padding: 3rem 0;
   }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+
   .contact-list {
     max-width: 100%;
+  }
+
+  .contact-list li {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  footer {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .close {
+    font-size: 25px;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+/* Extra Small Screens (below 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .certificates-section .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-list li {
+    font-size: 1rem;
   }
 }
