@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Ahmed Abouzeid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Ahmed Abouzeid</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="card project">
+        <h3>Brain Tumor Detection</h3>
+        <p>Deep learning model using ResNet-18 and PyTorch for MRI tumor classification.</p>
+        <a href="https://github.com/abouzeid69z/Brain-Tumor-Detection" target="_blank" class="btn-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="card project">
+        <h3>Game Store Website</h3>
+        <p>Responsive e-commerce site with front-end (HTML, CSS, JS) and backends using PHP & JavaEE.</p>
+        <a href="https://github.com/abouzeid69z/Game-Store-Website" target="_blank" class="btn-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="card project">
+        <h3>Movie Revenue Predictor</h3>
+        <p>Regression model to predict movie revenue using Python (Pandas, Sklearn, Matplotlib).</p>
+        <div class="btn-group">
+          <a href="https://github.com/abouzeid69z/movie-revenue-predictor" target="_blank" class="btn-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+          <a href="https://movie-revenue-predictor-rkgwg4euhnspw53ul4t3ov.streamlit.app/" target="_blank" class="btn-link">Try the App <i class="fas fa-play"></i></a>
+        </div>
+      </div>
+      <div class="card project">
+        <h3>GoCart (E-Commerce App)</h3>
+        <p>Feature-rich cart system using React, Node.js, and Express for managing e-commerce products and cart logic.</p>
+        <div class="btn-group">
+          <a href="https://github.com/abouzeid69z/CoCart" target="_blank" class="btn-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+          <button class="btn-tutorial" onclick="openModal()">View Tutorial <i class="fas fa-video"></i></button>
+        </div>
+      </div>
+      <div class="card project">
+        <h3>American Sign Language (ASL) Recognition</h3>
+        <p>Real-time hand gesture recognition app using Mediapipe and Python for ASL classification.</p>
+        <a href="https://github.com/abouzeid69z/ASL-py" target="_blank" class="btn-link">View on GitHub <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Ahmed Abouzeid | Designed with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video id="tutorialVideo" controls>
+        <source src="videos/GoCart.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      const modal = document.getElementById("videoModal");
+      const video = document.getElementById("tutorialVideo");
+      modal.style.display = "flex";
+      video.play();
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("videoModal");
+      const video = document.getElementById("tutorialVideo");
+      modal.style.display = "none";
+      video.pause();
+      video.currentTime = 0;
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("videoModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>
