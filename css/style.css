@@ -153,8 +153,20 @@ nav {
   border-color: #00ffff;
 }
 
-.btn-group a {
-  margin-right: 1.5rem;
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-group a,
+.btn-group button {
+  margin: 0;
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
 }
 
 .btn-download-cv {
@@ -349,13 +361,15 @@ nav {
   font-weight: 600;
   color: #00ffff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 6px;
   transition: all 0.3s ease;
   background: rgba(0, 255, 255, 0.1);
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .btn-link:hover {
@@ -364,6 +378,7 @@ nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
   border-color: #00ffff;
+  text-decoration: none;
 }
 
 .certificates-section {
